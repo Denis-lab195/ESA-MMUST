@@ -1,15 +1,11 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 session_start();
-include 'db.php'; // Ensure this includes your database connection setup
+include 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $reg_number = $_POST['reg_number'];
     $password = $_POST['password'];
 
-    // Prepare the SQL statement to prevent SQL injection
     $stmt = $conn->prepare("SELECT password FROM users WHERE reg_number = ?");
 
     if ($stmt === false) {
@@ -22,23 +18,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->store_result();
 
         if ($stmt->num_rows === 1) {
-            $stmt->bind_result($stored_password);
+            $stmt->bind_result($hashed_password);
             $stmt->fetch();
 
-            // Verify the plain text password
-            if ($password === $stored_password) {
+            if ($password === $hashed_password) { // No hashing, direct comparison
                 $_SESSION['loggedin'] = true;
                 $_SESSION['reg_number'] = $reg_number;
-                header("Location: Student Registry.html");
+                header("Location: Home.html");
                 exit();
             } else {
-                echo "<p style='color: red;'>Invalid password.</p>";
+                echo "Invalid password.";
             }
         } else {
-            echo "<p style='color: red;'>No user found with this registration number.</p>";
+            echo "No user found with this registration number.";
         }
     } else {
-        echo "<p style='color: red;'>Error: " . $stmt->error . "</p>";
+        echo "Error: " . $stmt->error;
     }
 
     $stmt->close();
