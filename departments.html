@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Departments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f5f6;
+        }
+        header {
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+            margin-right: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004d40;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #00796b;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #00796b;
+        }
+        .department {
+            margin-bottom: 20px;
+        }
+        .department img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .department h3 {
+            margin-top: 0;
+        }
+        .department p {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #004d40;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="ESA-MMUST Logo"> <!-- Add your logo image path -->
+        <h1>Engineering Departments</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#electrical">Electrical Engineering</a></li>
+            <li><a href="#civil">Civil Engineering</a></li>
+            <li><a href="#mechanical">Mechanical Engineering</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="section" id="electrical">
+            <h2>Electrical Engineering</h2>
+            <div class="department">
+                <img src="electrical.jpg" alt="Electrical Engineering"> <!-- Add your image path -->
+                <h3>About Electrical Engineering</h3>
+                <p>Electrical Engineering focuses on the study and application of electricity, electronics, and electromagnetism. This field includes power generation, transmission, and distribution, as well as the development of electrical devices and systems.</p>
+                <p>Key areas of study include circuit theory, control systems, signal processing, and telecommunications.</p>
+            </div>
+        </section>
+        <section class="section" id="civil">
+            <h2>Civil Engineering</h2>
+            <div class="department">
+                <img src="civil.jpg" alt="Civil Engineering"> <!-- Add your image path -->
+                <h3>About Civil Engineering</h3>
+                <p>Civil Engineering is concerned with the design, construction, and maintenance of the built environment. This includes infrastructure such as roads, bridges, dams, airports, and water supply systems.</p>
+                <p>Key areas of study include structural engineering, geotechnical engineering, transportation engineering, and environmental engineering.</p>
+            </div>
+        </section>
+        <section class="section" id="mechanical">
+            <h2>Mechanical Engineering</h2>
+            <div class="department">
+                <img src="mechanical.jpg" alt="Mechanical Engineering"> <!-- Add your image path -->
+                <h3>About Mechanical Engineering</h3>
+                <p>Mechanical Engineering involves the design, analysis, manufacturing, and maintenance of mechanical systems. It is one of the broadest engineering disciplines and encompasses the principles of mechanics, thermodynamics, and materials science.</p>
+                <p>Key areas of study include robotics, automotive engineering, aerospace engineering, and energy systems.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Engineering Students Association ESA-MMUST. All rights reserved.</p>
+    </footer>
+</body>
+</html>
