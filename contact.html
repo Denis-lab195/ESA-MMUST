@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ESA Portal</title>
+    <link rel="stylesheet" href="styless.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Basic CSS for layout and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .contact-info, .contact-form {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p, .contact-form p {
+            margin: 5px 0;
+        }
+
+        .contact-info address, .contact-info a {
+            display: block;
+        }
+
+        .contact-form form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <address>
+                <p><strong>ESA Organization</strong></p>
+                <p>123 Space Avenue</p>
+                <p>Space City, SC 12345</p>
+                <p>Email: <a href="mailto:info@esa.org">info@esa.org</a></p>
+                <p>Phone: +123 456 7890</p>
+                <p>Fax: +123 456 7891</p>
+            </address>
+            <div class="social-links">
+                <p>Follow us:</p>
+                <a href="https://www.facebook.com/ESA" target="_blank">Facebook</a>
+                <a href="https://twitter.com/ESA" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/company/esa" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/ESA" target="_blank">Instagram</a>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="contact-process.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ESA. All rights reserved.</p>
+    </footer>
+</body>
+</html>

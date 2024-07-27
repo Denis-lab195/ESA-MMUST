@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - ESA Merchandise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .order-form {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 500px;
+            text-align: center;
+        }
+        .order-form h2 {
+            margin-top: 0;
+        }
+        .order-form input[type="text"],
+        .order-form input[type="email"],
+        .order-form input[type="tel"],
+        .order-form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .order-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .order-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Order Your Merchandise</h1>
+    </header>
+
+    <div class="container">
+        <div class="order-form">
+            <h2>Order Form</h2>
+            <form action="order-process.php" method="post">
+                <input type="hidden" id="item" name="item">
+                <input type="hidden" id="price" name="price">
+                
+                <p><strong>Item:</strong> <span id="itemName"></span></p>
+                <p><strong>Price:</strong> $<span id="itemPrice"></span></p>
+
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <textarea name="address" placeholder="Shipping Address" rows="4" required></textarea>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Function to get query parameters
+        function getQueryParams() {
+            const params = {};
+            window.location.search.substring(1).split('&').forEach(function(part) {
+                const item = part.split('=');
+                params[item[0]] = decodeURIComponent(item[1]);
+            });
+            return params;
+        }
+
+        // Populate the form with query parameters
+        const params = getQueryParams();
+        document.getElementById('item').value = params.item;
+        document.getElementById('price').value = params.price;
+        document.getElementById('itemName').textContent = params.item.charAt(0).toUpperCase() + params.item.slice(1); // Capitalize the first letter
+        document.getElementById('itemPrice').textContent = params.price;
+    </script>
+</body>
+</html>

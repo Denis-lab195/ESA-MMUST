@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Students Organization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f5f6;
+        }
+        header {
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 100px;
+            justify-content: left;
+            margin-right: 70px;
+        }
+        header h1 {
+            margin: 0;
+            justify-content: center;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004d40;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #00796b;
+        }
+        .hero {
+            background-image: url('esa2.jpg'); /* Add your background image path */
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        .hero h2, .hero p {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #00796b;
+        }
+        .services, .projects, .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service, .project, .team-member {
+            flex: 1;
+            min-width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .service h3, .project h3, .team-member h3 {
+            margin-top: 0;
+        }
+        .service img, .project img, .team-member img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #c29f9f;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #00796b;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #004d40;
+        }
+        footer {
+            background-color: #004d40;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #00796b;
+            color: #ffffff;
+            border-radius: 8px;
+        }
+        .cta h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .cta p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="download (1).jpg" alt="ESA-MMUST Logo"> <!-- Add your logo image path -->
+        <h1>Engineering Students Association ESA-MMUST</h1>
+        <img src="mmust.jpg" alt="ESA-MMUST Logo"> <!-- Add your logo image path -->
+    </header>
+    <nav>
+        <ul>
+            <li><a href="page 2.html">Home</a></li>
+            <li><a href="#Departments">Departments</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero" id="home">
+        <h2>Empowering Future Engineers</h2>
+        <p>Join us to excel in engineering through education, projects, and networking.</p>
+    </section>
+    <div class="container">
+        <section class="cta">
+            <h2>Get Involved!</h2>
+            <p>Participate in our workshops, projects, and events to enhance your skills and network with peers.</p>
+        </section>
+        <section class="section" id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Workshops & Seminars</h3>
+                    <p>Attend our workshops and seminars to gain practical knowledge and skills in engineering.</p>
+                </div>
+                <div class="service">
+                    <h3>Career Guidance</h3>
+                    <p>Receive guidance and mentorship for career development and job placements.</p>
+                </div>
+                <div class="service">
+                    <h3>Networking Events</h3>
+                    <p>Connect with industry professionals and fellow students at our networking events.</p>
+                </div>
+                <div class="service">
+                    <h3>Technical Support</h3>
+                    <p>Get technical support and resources for your engineering projects and studies.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="projects">
+            <h2>Our Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Smart Campus Initiative</h3>
+                    <p>A project aimed at integrating smart technologies into campus infrastructure.</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Renewable Energy Solutions</h3>
+                    <p>Developing sustainable energy solutions for campus and community use.</p>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Engineering Design Challenge</h3>
+                    <p>An annual competition showcasing innovative engineering designs and solutions.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="team">
+            <h2>Meet Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <h3>Mutunga</h3>
+                    <p>Chairperson - Leading the organization with a vision for student engagement and success.</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member2.jpg" alt="Team Member 2">
+                    <h3>Noldah Adhiambo</h3>
+                    <p>Vice Chairperson - Overseeing events and workshops, ensuring smooth operations.</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member3.jpg" alt="Team Member 3">
+                    <h3>Rabare</h3>
+                    <p>Secretary General - Managing communications and keeping records of the organization's activities.</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member3.jpg" alt="Team Member 3">
+                    <h3>Denis Bittok</h3>
+                    <p>Editor General- Managing communications and keeping records of the organization's activities.</p>
+                </div>
+                 <div class="team-member">
+                    <img src="team-member3.jpg" alt="Team Member 3">
+                    <h3>Lewis Onsongo</h3>
+                    <p>Editor General- Managing communications and keeping records of the organization's activities.</p>
+                </div>
+                 <div class="team-member">
+                    <img src="team-member3.jpg" alt="Team Member 3">
+                    <h3>Denis Bittok</h3>
+                    <p>Editor General- Managing communications and keeping records of the organization's activities.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="contact-process.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Engineering Students Association ESA-MMUST. All rights reserved.</p>
+    </footer>
+</body>
+</html>

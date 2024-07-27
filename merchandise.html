@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise - ESA Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .product h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+        .product p {
+            color: #555;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4caf50;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>ESA Merchandise</h1>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <img src="shirt.jpg" alt="ESA T-Shirt">
+            <h3>ESA T-Shirt</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price">$20.00</div>
+            <a href="order.html?item=shirt&price=20" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="cap.jpg" alt="ESA Cap">
+            <h3>ESA Cap</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price">$15.00</div>
+            <a href="order.html?item=cap&price=15" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="mug.jpg" alt="ESA Mug">
+            <h3>ESA Mug</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price">$12.00</div>
+            <a href="order.html?item=mug&price=12" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="poster.jpg" alt="ESA Poster">
+            <h3>ESA Poster</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price">$10.00</div>
+            <a href="order.html?item=poster&price=10" class="button">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Year Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            width: 800px; /* Adjust the width as needed */
+        }
+        .header {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .form-section {
+            flex: 1;
+            margin: 10px;
+            min-width: 300px; /* Ensures sections are responsive */
+        }
+        .form-section h3 {
+            margin-top: 0;
+        }
+        .form-section input[type="text"],
+        .form-section input[type="email"],
+        .form-section input[type="tel"],
+        .form-section input[type="date"],
+        .form-section select,
+        .form-section textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-section button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>First Year Registration</h2>
+        </div>
+        <div class="form-container">
+            <div class="form-section">
+                <h3>Personal Details</h3>
+                <form action="registration-process.php" method="post">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                    <input type="date" name="dob" placeholder="Date of Birth" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <input type="text" name="national_id" placeholder="National ID" required>
+                </div>
+                <div class="form-section">
+                    <h3>Academic Details</h3>
+                    <input type="text" name="reg_number" placeholder="Registration Number" required>
+                    <input type="text" name="course" placeholder="Course" required>
+                    <input type="text" name="admission_year" placeholder="Admission Year" required>
+
+                    <h3>Contact Address</h3>
+                    <textarea name="address" placeholder="Address" rows="4" required></textarea>
+                    
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
