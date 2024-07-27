@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Organization Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f5f6;
+        }
+        header {
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+            margin-right: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004d40;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #00796b;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #00796b;
+        }
+        .events {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .event {
+            flex: 1;
+            min-width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .event img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .event h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #004d40;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="ESA-MMUST Logo"> <!-- Add your logo image path -->
+        <h1>Engineering Organization Events</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#sports">Sports</a></li>
+            <li><a href="#dinner">Dinner</a></li>
+            <li><a href="#retreats">Retreats</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="section" id="sports">
+            <h2>Sports Events</h2>
+            <div class="events">
+                <div class="event">
+                    <img src="sports1.jpg" alt="Sports Event 1"> <!-- Add your image path -->
+                    <h3>Annual Football Tournament</h3>
+                    <p>Join us for an exciting football tournament where teams compete for the championship title.</p>
+                </div>
+                <div class="event">
+                    <img src="sports2.jpg" alt="Sports Event 2"> <!-- Add your image path -->
+                    <h3>Basketball League</h3>
+                    <p>Participate in our basketball league and showcase your skills on the court.</p>
+                </div>
+                <div class="event">
+                    <img src="sports3.jpg" alt="Sports Event 3"> <!-- Add your image path -->
+                    <h3>Marathon</h3>
+                    <p>Take part in our annual marathon and run for a cause.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="dinner">
+            <h2>Annual Dinner</h2>
+            <div class="events">
+                <div class="event">
+                    <img src="dinner1.jpg" alt="Dinner Event 1"> <!-- Add your image path -->
+                    <h3>Gala Night</h3>
+                    <p>Join us for an elegant evening of dining, networking, and entertainment at our Gala Night.</p>
+                </div>
+                <div class="event">
+                    <img src="dinner2.jpg" alt="Dinner Event 2"> <!-- Add your image path -->
+                    <h3>Awards Dinner</h3>
+                    <p>Celebrate the achievements of our members at our annual Awards Dinner.</p>
+                </div>
+                <div class="event">
+                    <img src="dinner3.jpg" alt="Dinner Event 3"> <!-- Add your image path -->
+                    <h3>Networking Dinner</h3>
+                    <p>Connect with professionals and peers at our Networking Dinner.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="retreats">
+            <h2>Retreats</h2>
+            <div class="events">
+                <div class="event">
+                    <img src="retreat1.jpg" alt="Retreat Event 1"> <!-- Add your image path -->
+                    <h3>Team Building Retreat</h3>
+                    <p>Join us for a weekend of team-building activities and relaxation.</p>
+                </div>
+                <div class="event">
+                    <img src="retreat2.jpg" alt="Retreat Event 2"> <!-- Add your image path -->
+                    <h3>Leadership Retreat</h3>
+                    <p>Develop your leadership skills at our intensive leadership retreat.</p>
+                </div>
+                <div class="event">
+                    <img src="retreat3.jpg" alt="Retreat Event 3"> <!-- Add your image path -->
+                    <h3>Innovation Retreat</h3>
+                    <p>Engage in creative thinking and innovation at our retreat focused on new ideas.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Engineering Students Association ESA-MMUST. All rights reserved.</p>
+    </footer>
+</body>
+</html>
