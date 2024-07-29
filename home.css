@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5f6;
+    font-size: 16px; /* Base font size */
+}
+
+header {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 20px; /* Fixed padding for consistency */
+    display: flex;
+    justify-content: space-between; /* Space out items to the left and right */
+    align-items: center;
+}
+
+header .logo-left,
+header .logo-right {
+    height: 80px; /* Fixed height for the logos */
+}
+
+.hero {
+    background-image: url('esa2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px; /* Fixed padding for consistency */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
