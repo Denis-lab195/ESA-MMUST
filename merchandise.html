@@ -108,3 +108,103 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Logos at Bottom</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .scrolling-logos {
+            width: 100%;
+            overflow: hidden;
+            background-color: hsl(0, 0%, 100%);
+            white-space: nowrap;
+            box-sizing: border-box;
+            position: fixed;
+            bottom: 0;
+        }
+        .scrolling-logos .logos {
+            display: flex;
+            animation: scroll-left 30s linear infinite;
+        }
+        .scrolling-logos .logos div {
+            flex: 0 0 auto;
+            width: 150px; /* Adjust the width as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .scrolling-logos img {
+            height: 40px; /* Adjust the height as needed */
+        }
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Your page content goes here -->
+    
+    <div class="scrolling-logos">
+        <div class="logos">
+            <!-- Original set of logos -->
+            <div><img src="esa.png" alt="Logo 1"></div>
+            <div><img src="mmust.png" alt="Logo 2"></div>
+            <div><img src="kenya power.png" alt="Logo 3"></div>
+            <div><img src="rerec.png" alt="Logo 4"></div>
+            <div><img src="kerra.jpg" alt="Logo 1"></div>
+            <div><img src="Kenha.jpg" alt="Logo 2"></div>
+            <div><img src="kaa.jpg" alt="Logo 3"></div>
+            <div><img src="kbl.jpg" alt="Logo 4"></div>
+            <div><img src="ebk.jpg" alt="Logo 1"></div>
+            <div><img src="download.jpg" alt="Logo 2"></div>
+            <div><img src="esa.png" alt="Logo 1"></div>
+            <div><img src="mmust.png" alt="Logo 2"></div>
+            <div><img src="kenya power.png" alt="Logo 3"></div>
+            <div><img src="rerec.png" alt="Logo 4"></div>
+            <div><img src="kerra.jpg" alt="Logo 1"></div>
+            <div><img src="Kenha.jpg" alt="Logo 2"></div>
+            <div><img src="kaa.jpg" alt="Logo 3"></div>
+            <div><img src="kbl.jpg" alt="Logo 4"></div>
+            <div><img src="ebk.jpg" alt="Logo 1"></div>
+            <div><img src="download.jpg" alt="Logo 2"></div>
+            <div><img src="esa.png" alt="Logo 1"></div>
+            <div><img src="mmust.png" alt="Logo 2"></div>
+            <div><img src="kenya power.png" alt="Logo 3"></div>
+            <div><img src="rerec.png" alt="Logo 4"></div>
+            <div><img src="kerra.jpg" alt="Logo 1"></div>
+            <div><img src="Kenha.jpg" alt="Logo 2"></div>
+            <div><img src="kaa.jpg" alt="Logo 3"></div>
+            <div><img src="kbl.jpg" alt="Logo 4"></div>
+            <div><img src="ebk.jpg" alt="Logo 1"></div>
+            <div><img src="download.jpg" alt="Logo 2"></div>
+            <div><img src="esa.png" alt="Logo 1"></div>
+            <div><img src="mmust.png" alt="Logo 2"></div>
+            <div><img src="kenya power.png" alt="Logo 3"></div>
+            <div><img src="rerec.png" alt="Logo 4"></div>
+            <div><img src="kerra.jpg" alt="Logo 1"></div>
+            <div><img src="Kenha.jpg" alt="Logo 2"></div>
+            <div><img src="kaa.jpg" alt="Logo 3"></div>
+            <div><img src="kbl.jpg" alt="Logo 4"></div>
+            <div><img src="ebk.jpg" alt="Logo 1"></div>
+            <div><img src="download.jpg" alt="Logo 2"></div>
+        </div>
+    </div>
+</body>
+</html>
