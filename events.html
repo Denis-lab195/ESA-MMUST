@@ -6,7 +6,7 @@
     <title>Engineering Organization Events</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif; /* Modern font */
             margin: 0;
             padding: 0;
             background-color: #e9f5f6;
@@ -62,43 +62,63 @@
         .section h2 {
             margin-top: 0;
             color: #00796b;
+            font-size: 2em;
         }
         .events {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             gap: 20px;
         }
         .event {
-            flex: 1;
-            min-width: 250px;
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-bottom: 20px;
+            max-width: 1000px; /* Set a maximum width */
+            margin-left: auto;
+            margin-right: auto; /* Center the event block */
         }
         .event img {
             max-width: 100%;
-            border-radius: 8px;
+            height: auto;
+            border-radius: 20px;
             margin-bottom: 10px;
         }
         .event h3 {
             margin-top: 0;
+            font-size: 1.5em;
+        }
+        .event p {
+            font-size: 1em;
+            line-height: 1.6;
         }
         footer {
             background-color: #004d40;
             color: #ffffff;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: relative; /* Changed from fixed to relative */
             width: 100%;
             bottom: 0;
         }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .event h3 {
+                font-size: 1.25em;
+            }
+            .event p {
+                font-size: 0.9em;
+            }
+        }
     </style>
+    <!-- Include Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="ESA-MMUST Logo"> <!-- Add your logo image path -->
+        <img src="logo.png" alt="ESA-MMUST Logo">
         <h1>Engineering Organization Events</h1>
     </header>
     <nav>
@@ -113,17 +133,26 @@
             <h2>Sports Events</h2>
             <div class="events">
                 <div class="event">
-                    <img src="sports1.jpg" alt="Sports Event 1"> <!-- Add your image path -->
+                    <img src="GAMES.jpg" alt="Sports Event 1">
                     <h3>Annual Football Tournament</h3>
-                    <p>Join us for an exciting football tournament where teams compete for the championship title.</p>
+                    <p>MMUST Engineering Student Association Holds Annual Tournament, Bridging Academia and Industry
+                        Engineering students celebrate their victory as they proudly lift the trophy for the 2024 tournament.
+                        
+                        The Masinde Muliro University of Science and Technology’s (MMUST) Engineering Students Association (ESA) from 10 to 11 February 2024, hosted its highly anticipated Annual Tournament at the Approved School grounds. The event, marked by a series of games and sports, served as a vibrant platform where aspiring engineers showcased their talents while establishing invaluable connections with key industry players. The event was organised by ESA Leadership alongside ESA Patron Dr. Micah Mukolwe. This demonstrated the association’s commitment to bridging the gap between academia and industry in a dynamic and collaborative setting, while also fostering a sense of unity among ESA students. The tournament, which was sponsored by the Kenya Power and Lightning Company (KPLC) was graced by the Associate Dean- School of Engineering and Built Environment, Dr. Peter Cherop, who was representing the Dean, Prof. Eng. Bernadette Sabuni.
+                        
+                        “We have had a longstanding partnership with KPLC, but incorporating sports has truly elevated our collaboration,” remarked Dr. Cherop. With gratitude, he commended KPLC and the ESA teams for orchestrating such a remarkable event, anticipating continued collaboration and a myriad of future activities.</p>
+                    <img src="KPLC.jpg" alt="Sports Event 2">
+                    <p>The KPLC team demonstrating strength and teamwork during the tug of war competition against SEBE staff.
+
+                        The SEBE staff and students as well as KPLC teams participated in the football match and chess games through the weekend. Spectators were treated to an exhilarating showcase of skill and sportsmanship, as each team battled for the prestigious tournament title and grand award. It is worth noting that the 5th-year team showcased their resilience and skill, ultimately clinching the tournament title and solidifying their status as champions of the 2024 tournament.</p>
                 </div>
                 <div class="event">
-                    <img src="sports2.jpg" alt="Sports Event 2"> <!-- Add your image path -->
+                    <img src="KPLC.jpg" alt="Sports Event 2">
                     <h3>Basketball League</h3>
                     <p>Participate in our basketball league and showcase your skills on the court.</p>
                 </div>
                 <div class="event">
-                    <img src="sports3.jpg" alt="Sports Event 3"> <!-- Add your image path -->
+                    <img src="sports3.jpg" alt="Sports Event 3">
                     <h3>Marathon</h3>
                     <p>Take part in our annual marathon and run for a cause.</p>
                 </div>
@@ -133,17 +162,17 @@
             <h2>Annual Dinner</h2>
             <div class="events">
                 <div class="event">
-                    <img src="esa dinnner.jpg" alt="Dinner Event 1"> <!-- Add your image path -->
+                    <img src="esa dinnner.jpg" alt="Dinner Event 1">
                     <h3>Gala Night</h3>
                     <p>Join us for an elegant evening of dining, networking, and entertainment at our Gala Night.</p>
                 </div>
                 <div class="event">
-                    <img src="esa dinnner.jpg" alt="Dinner Event 2"> <!-- Add your image path -->
+                    <img src="esa dinnner.jpg" alt="Dinner Event 2">
                     <h3>Awards Dinner</h3>
                     <p>Celebrate the achievements of our members at our annual Awards Dinner.</p>
                 </div>
                 <div class="event">
-                    <img src="gala.jpg" alt="Dinner Event 3"> <!-- Add your image path -->
+                    <img src="gala.jpg" alt="Dinner Event 3">
                     <h3>Networking Dinner</h3>
                     <p>Connect with professionals and peers at our Networking Dinner.</p>
                 </div>
@@ -153,17 +182,17 @@
             <h2>Retreats</h2>
             <div class="events">
                 <div class="event">
-                    <img src="retreat1.jpg" alt="Retreat Event 1"> <!-- Add your image path -->
+                    <img src="retreat1.jpg" alt="Retreat Event 1">
                     <h3>Team Building Retreat</h3>
                     <p>Join us for a weekend of team-building activities and relaxation.</p>
                 </div>
                 <div class="event">
-                    <img src="retreat2.jpg" alt="Retreat Event 2"> <!-- Add your image path -->
+                    <img src="retreat2.jpg" alt="Retreat Event 2">
                     <h3>Leadership Retreat</h3>
                     <p>Develop your leadership skills at our intensive leadership retreat.</p>
                 </div>
                 <div class="event">
-                    <img src="retreat3.jpg" alt="Retreat Event 3"> <!-- Add your image path -->
+                    <img src="retreat3.jpg" alt="Retreat Event 3">
                     <h3>Innovation Retreat</h3>
                     <p>Engage in creative thinking and innovation at our retreat focused on new ideas.</p>
                 </div>
