@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineering Students Organization</title>
-    >
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -20,20 +17,16 @@
             padding: 20px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
         header img {
-            height: 100px;
-            justify-content: left;
-            margin-right: 70px;
+            height: 80px;
         }
         header h1 {
             margin: 0;
-            justify-content: center;
-            font-size: 2.5em;
+            font-size: 2em;
         }
         nav {
-            display: flex;
-            justify-content: center;
             background-color: #004d40;
         }
         nav ul {
@@ -41,6 +34,7 @@
             padding: 0;
             margin: 0;
             display: flex;
+            justify-content: center;
         }
         nav ul li {
             margin: 0;
@@ -146,10 +140,7 @@
             background-color: #004d40;
             color: #ffffff;
             text-align: center;
-            padding: 5px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 10px;
         }
         .cta {
             text-align: center;
@@ -165,6 +156,28 @@
         }
         .cta p {
             font-size: 1.2em;
+        }
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            .hero h2 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .services, .projects, .team {
+                flex-direction: column;
+            }
+            .scrolling-logos img {
+                height: 30px; /* Adjust height for mobile */
+            }
         }
     </style>
 </head>
@@ -268,7 +281,7 @@
                     <p>Editor General- Managing communications and keeping records of the organization's activities.</p>
                 </div>
                  <div class="team-member">
-                    <img src="team-member3.jpg" alt="Team Member 3">
+                    <img src="lewis.jpg" alt="Team Member 3">
                     <h3>Lewis Onsongo</h3>
                     <p>Treasurer- Managing the organization's finances, including budgeting, record-keeping, and financial reporting..</p>
                 </div>
@@ -277,6 +290,7 @@
                     <h3>Larry Okumu</h3>
                     <p>ESA Coordinator- Managing communications and keeping records of the organization's activities.</p>
                 </div>
+                
             </div>
         </section>
         <section class="section" id="contact">
