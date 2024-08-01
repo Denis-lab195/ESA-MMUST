@@ -3,409 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Students Organization</title>
+    <title>System Under Maintenance</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #e9f5f6;
-        }
-        header {
-            background-color: #00796b;
-            color: #ffffff;
-            padding: 20px;
             display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
-        }
-        header img {
-            height: 80px;
-        }
-        header h1 {
+            height: 100vh;
             margin: 0;
-            font-size: 2em;
-        }
-        nav {
-            background-color: #004d40;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: block;
-        }
-        nav ul li a:hover {
-            background-color: #00796b;
-        }
-        .hero {
-            background-image: url('esa2.jpg'); /* Add your background image path */
-            background-size: cover;
-            background-position: center;
-            color: #ffffff;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
             text-align: center;
-            padding: 100px 20px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
         }
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
-            z-index: 1;
-        }
-        .hero h2, .hero p {
-            position: relative;
-            z-index: 2;
-        }
-        .hero h2 {
-            margin: 0;
-            font-size: 3em;
-        }
-        .hero p {
-            font-size: 1.5em;
-        }
-        .container {
-            padding: 20px;
-        }
-        .section {
-            background-color: #ffffff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
+        .maintenance-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .section h2 {
-            margin-top: 0;
-            color: #00796b;
+        h1 {
+            color: #ff0000;
         }
-        .services, .projects, .team {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .service, .project, .team-member {
-            flex: 1;
-            min-width: 250px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .service h3, .project h3, .team-member h3 {
-            margin-top: 0;
-        }
-        .service img, .project img, .team-member img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #c29f9f;
-            border-radius: 4px;
-        }
-        .contact-form button {
-            background-color: #00796b;
-            color: #ffffff;
-            border: none;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .contact-form button:hover {
-            background-color: #004d40;
-        }
-        footer {
-            background-color: #004d40;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-        }
-        .cta {
-            text-align: center;
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #00796b;
-            color: #ffffff;
-            border-radius: 8px;
-        }
-        .cta h2 {
-            margin: 0;
+        .countdown {
             font-size: 2em;
-        }
-        .cta p {
-            font-size: 1.2em;
-        }
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            nav ul {
-                flex-direction: column;
-            }
-            .hero h2 {
-                font-size: 2em;
-            }
-            .hero p {
-                font-size: 1em;
-            }
-            .services, .projects, .team {
-                flex-direction: column;
-            }
-            .scrolling-logos img {
-                height: 30px; /* Adjust height for mobile */
-            }
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="esa.png" alt="ESA-MMUST Logo"> <!-- Add your logo image path -->
-        <h1>Engineering Students Association ESA-MMUST</h1>
-        <img src="mmust.png" alt="ESA-MMUST Logo"> <!-- Add your logo image path -->
-    </header>
-    <nav>
-        <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="departments.html">Departments</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="merchandise.html">Merchandise</a></li>
-            <li><a href="esa magazine.html">Downloads</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login form.html">Register</a></li>
-            
-        </ul>
-    </nav>
-    <section class="hero" id="home">
-        <h2>Empowering Future Engineers</h2>
-        <p>Join us to excel in engineering through education, projects, and networking.</p>
-    </section>
-    <div class="container">
-        <section class="cta">
-            <h2>Get Involved!</h2>
-            <p>Participate in our workshops, projects, and events to enhance your skills and network with peers.</p>
-        </section>
-        <section class="section" id="services">
-            <h2>Our Services</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>CAD Trainings</h3>
-                    <img src="workshop.jpg" alt="">
-                                       <p>Attend our workshops and seminars to gain practical knowledge and skills in engineering.</p>
-                    <li><a href="login form.html">Register CAD</a></li>
-                </div>
-                <div class="service">
-                    <h3>Career Guidance</h3>
-                    <img src="career.jpg" alt="">
-                    <p>Receive guidance and mentorship for career development and job placements.</p>
-                </div>
-                <div class="service">
-                    <h3>Networking Events</h3>
-                    <img src="newtork.jpg" alt="">
-                    <p>Connect with industry professionals and fellow students at our networking events.</p>
-                </div>
-                <div class="service">
-                    <h3>Technical Support</h3>
-                    <p>Get technical support and resources for your engineering projects and studies.</p>
-                </div>
-            </div>
-        </section>
-        <section class="section" id="projects">
-            <h2>Our Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Smart Campus Initiative</h3>
-                    <img src="mmustd.jpg" alt="">
-                    <p>A project aimed at integrating smart technologies into campus infrastructure.</p>
-                </div>
-                <div class="project">
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Renewable Energy Solutions</h3>
-                    <img src="energy.jpg" alt="">
-                    <p>Developing sustainable energy solutions for campus and community use.</p>
-                </div>
-                <div class="project">
-                    <img src="project3.jpg" alt="Project 3">
-                    <h3>The Innovators</h3>
-                    <img src="esa2.jpg" alt="">
-                    <p>An annual competition showcasing innovative engineering designs and solutions.</p>
-                </div>
-            </div>
-        </section>
-        <section class="section" id="team">
-            <h2>Meet Our Team</h2>
-            <div class="team">
-                <div class="team-member">
-                    <img src="mathew.png" alt="Team Member 1">
-                    <h3> Mathew Mutunga</h3>
-                    <p>Chairperson - Leading the organization with a vision for student engagement and success.</p>
-                </div>
-                <div class="team-member">
-                    <img src="nol.jpeg" alt="Team Member 2">
-                    <h3>Noldah Adhiambo</h3>
-                    <p>Vice Chairperson - Overseeing events and workshops, ensuring smooth operations.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team-member3.jpg" alt="Team Member 3">
-                    <h3> Rajiv Rabare</h3>
-                    <p>Secretary General - Managing communications and keeping records of the organization's activities.</p>
-                </div>
-                <div class="team-member">
-                    <img src="deno2.png" alt="Team Member 3">
-                    <h3>Denis Bittok</h3>
-                    <p>Editor General- Managing communications and keeping records of the organization's activities.</p>
-                </div>
-                 <div class="team-member">
-                    <img src="lewis.jpg" alt="Team Member 3">
-                    <h3>Lewis Onsongo</h3>
-                    <p>Treasurer- Managing the organization's finances, including budgeting, record-keeping, and financial reporting..</p>
-                </div>
-                 <div class="team-member">
-                    <img src="team-member3.jpg" alt="Team Member 3">
-                    <h3>Larry Okumu</h3>
-                    <p>ESA Coordinator- Managing communications and keeping records of the organization's activities.</p>
-                </div>
-                
-            </div>
-        </section>
-        <section class="section" id="contact">
-            <h2>Contact Us</h2>
-            <form class="contact-form" action="contact-process.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+    <div class="maintenance-container">
+        <h1>System Under Maintenance</h1>
+        <p>We are currently performing scheduled maintenance. We should be back online shortly. Thank you for your patience.</p>
+        <div class="countdown" id="countdown"></div>
     </div>
-    <footer>
-        <p>&copy; 2024 Engineering Students Association ESA-MMUST. All rights reserved.</p>
-    </footer>
+
+    <script>
+        // Set the date and time for when the maintenance ends
+        var maintenanceEndTime = new Date("August 6, 2024 15:00:00").getTime();
+
+        // Update the countdown every 1 second
+        var countdownInterval = setInterval(function() {
+            // Get the current date and time
+            var now = new Date().getTime();
+
+            // Calculate the remaining time
+            var timeRemaining = maintenanceEndTime - now;
+
+            // Calculate days, hours, minutes and seconds
+            var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Display the result in the countdown element
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, display a message
+            if (timeRemaining < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "Maintenance completed";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrolling Logos at Bottom</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-        .scrolling-logos {
-            width: 100%;
-            overflow: hidden;
-            background-color: hsl(0, 0%, 100%);
-            white-space: nowrap;
-            box-sizing: border-box;
-            position: fixed;
-            bottom: 0;
-        }
-        .scrolling-logos .logos {
-            display: flex;
-            animation: scroll-left 120s linear infinite;
-        }
-        .scrolling-logos .logos div {
-            flex: 0 0 auto;
-            width: 150px; /* Adjust the width as needed */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .scrolling-logos img {
-            height: 40px; /* Adjust the height as needed */
-        }
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Your page content goes here -->
-     
-    
-    <div class="scrolling-logos">
-        <div class="logos">
-            <!-- Original set of logos -->
-            <div><img src="esa.png" alt="Logo 1"></div>
-            <div><img src="mmust.png" alt="Logo 2"></div>
-            <div><img src="kenya power.png" alt="Logo 3"></div>
-            <div><img src="rerec.png" alt="Logo 4"></div>
-            <div><img src="kerra.jpg" alt="Logo 1"></div>
-            <div><img src="Kenha.jpg" alt="Logo 2"></div>
-            <div><img src="kaa.jpg" alt="Logo 3"></div>
-            <div><img src="kbl.jpg" alt="Logo 4"></div>
-            <div><img src="ebk.jpg" alt="Logo 1"></div>
-            <div><img src="download.jpg" alt="Logo 2"></div>
-            <div><img src="esa.png" alt="Logo 1"></div>
-            <div><img src="mmust.png" alt="Logo 2"></div>
-            <div><img src="kenya power.png" alt="Logo 3"></div>
-            <div><img src="rerec.png" alt="Logo 4"></div>
-            <div><img src="kerra.jpg" alt="Logo 1"></div>
-            <div><img src="Kenha.jpg" alt="Logo 2"></div>
-            <div><img src="kaa.jpg" alt="Logo 3"></div>
-            <div><img src="kbl.jpg" alt="Logo 4"></div>
-            <div><img src="ebk.jpg" alt="Logo 1"></div>
-            <div><img src="download.jpg" alt="Logo 2"></div>
-            <div><img src="esa.png" alt="Logo 1"></div>
-            <div><img src="mmust.png" alt="Logo 2"></div>
-            <div><img src="kenya power.png" alt="Logo 3"></div>
-            <div><img src="rerec.png" alt="Logo 4"></div>
-            <div><img src="kerra.jpg" alt="Logo 1"></div>
-            <div><img src="Kenha.jpg" alt="Logo 2"></div>
-            <div><img src="kaa.jpg" alt="Logo 3"></div>
-            <div><img src="kbl.jpg" alt="Logo 4"></div>
-            <div><img src="ebk.jpg" alt="Logo 1"></div>
-            <div><img src="download.jpg" alt="Logo 2"></div>
-            <div><img src="esa.png" alt="Logo 1"></div>
-            <div><img src="mmust.png" alt="Logo 2"></div>
-            <div><img src="kenya power.png" alt="Logo 3"></div>
-            <div><img src="rerec.png" alt="Logo 4"></div>
-            <div><img src="kerra.jpg" alt="Logo 1"></div>
-            <div><img src="Kenha.jpg" alt="Logo 2"></div>
-            <div><img src="kaa.jpg" alt="Logo 3"></div>
-            <div><img src="kbl.jpg" alt="Logo 4"></div>
-            <div><img src="ebk.jpg" alt="Logo 1"></div>
-            <div><img src="download.jpg" alt="Logo 2"></div>
-        </div>
-    </div>
-</body>
-</html>
+
+
